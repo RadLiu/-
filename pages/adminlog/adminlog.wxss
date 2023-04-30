@@ -1,0 +1,9 @@
+.main{
+  margin: 30rpx;
+}
+
+.input{
+  margin: 20rpx;
+  border: 5rpx solid lightblue;
+  border-radius: 10rpx;
+}

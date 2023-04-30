@@ -1,0 +1,17 @@
+<view class="huanying">
+  欢迎来到电子技术部后台界面
+  <text>\n</text>
+  请输入管理员姓名与密码
+</view>
+<view class="main">
+  输入姓名：
+  <text>\n</text>
+  <input class="input" bindinput="getName"></input>
+
+  输入密码：
+  <text>\n</text>
+  <input class="input" bindinput="getMiMa"></input>
+  <text>\n</text>
+  <button type="primary" bindtap="login">管理员登录</button>
+
+</view>

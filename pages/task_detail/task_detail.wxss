@@ -1,0 +1,68 @@
+.name {
+  padding: 30rpx;
+  display: flex;  
+  font-size: 40rpx;
+}
+
+.shijian {
+  padding-left: 30rpx;
+  font-size: 30rpx;
+  border-bottom: 3rpx solid #576B95;
+  width: 60%;
+}
+
+.status {
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  font-size: 40rpx;
+}
+
+.status0 {
+  color: #fa5151;
+}
+
+.status1 {
+  color:#FFC300;
+}
+
+.status2 {
+  color:#07C160;
+}
+
+.model {
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  font-size: 40rpx;
+}
+
+.more {
+
+  padding: 30rpx;
+  font-size: 40rpx;
+  word-break:break-all;
+  border-bottom: 4rpx solid wheat;
+  border-top: 4rpx solid wheat;
+  background-color:whitesmoke;
+
+}
+
+
+.more2 {
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  font-size: 35rpx;
+
+}
+
+.detail{
+  border-bottom: 3rpx solid #576B95;
+}
+
+input {
+
+  padding: 20rpx;
+  background-color:lemonchiffon;
+  border-radius: 20rpx;
+
+
+}

@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+
+	},
+	"enablePullDownRefresh": true,
+	"navigationBarTitleText": "我填写的报修单",
+	"backgroundColor": "#d3d3d3"
+}

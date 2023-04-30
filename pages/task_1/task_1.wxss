@@ -1,0 +1,60 @@
+.task0{
+  width: 30% !important;
+
+}
+.task1{
+  width: 30% !important;
+
+}
+.task2{
+  width: 30% !important;
+}
+
+.tab{
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+}
+
+.task_detail {
+  width: 83%;
+  background-color: whitesmoke;
+  border: 6rpx solid #FFC300;
+  border-radius: 50rpx;
+  /* padding-left: 40rpx; */
+  padding: 30rpx;
+  
+
+}
+
+.task {
+  padding-top: 20rpx;
+  margin: 29rpx;
+  word-break: break-all;
+  font-size: large;
+}
+
+.xinghao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  display: inline;
+  float: right;
+}
+
+.status0 {
+  color: #fa5151;
+}
+
+.status1 {
+  color: #FFC300;
+}
+
+.status2 {
+  color: #07C160;
+}
+
+/* rgb(51,141,249) */

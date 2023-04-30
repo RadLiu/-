@@ -1,0 +1,51 @@
+.picker {
+  padding: 20rpx;
+  background-color: whitesmoke;
+  color: rgb(128, 128, 128);
+  border-radius: 20rpx;
+
+}
+
+input {
+
+  padding: 20rpx;
+  background-color: whitesmoke;
+  border-radius: 20rpx;
+
+}
+
+.shangchuan {
+  margin-top: 20rpx;
+}
+
+.weui-textarea {
+  background-color: whitesmoke;
+}
+
+.radio {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+
+}
+
+.contain {
+  text-align: center;
+  display: flex;
+  align-content: center;
+  vertical-align: center;
+  /**垂直居中*/
+  justify-content: center;
+  /**内容居中*/
+}
+
+.xieyi {
+  color: blue;
+  text-align: center;
+}
+
+.zhuyi{
+
+  color: rgb(128, 128, 128);
+  font-size: small;
+}

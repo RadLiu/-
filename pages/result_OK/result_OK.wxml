@@ -1,0 +1,21 @@
+<view class="page">
+    <mp-msg type="success" title="报修单已成功提交">
+        <view slot="desc">稍后会有电子技术员与您通过QQ沟通报修详情，我们会尽快解决您的问题！</view>
+        <text slot="desc" user-select="true">您也可以加入电子技术咨询QQ群：459121889进行询问</text>
+        <view slot="extend">
+       
+        </view>
+        <view slot="handle">
+            <button class="weui-btn" type="primary" bindtap="goBackToMine">回到主页</button>
+            
+            <view slot="desc">遇到问题？请尝试联系管理员</view>
+
+            <button class="weui-btn" type="warn" open-type="contact">联系管理员</button>
+        </view>
+        <view slot="footer">
+            
+            <view class="weui-footer__text">Copyright © 2021-现在 </view>
+            <view class="weui-footer__text">江南大学团委通讯社电子技术部 </view>
+        </view>
+    </mp-msg>
+</view>

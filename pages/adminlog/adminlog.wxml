@@ -1,0 +1,13 @@
+<view class="main">
+  <text>\n</text>
+  输入账号：
+  <text>\n</text>
+  <input class="input" bindinput="getZhangHao"></input>
+
+  输入密码：
+  <text>\n</text>
+  <input class="input" bindinput="getMiMa"></input>
+  <text>\n</text>
+  <button type="primary" bindtap="login">管理员登录</button>
+
+</view>

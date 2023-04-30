@@ -1,0 +1,16 @@
+<scroll-view class="task" enable-flex scroll-y wx:for="{{list}}">
+
+  <view class="task_detail" bindtap="GoToDetail" data-id="{{item._id}}">
+    <view class="xinghao">
+      型号：{{item.XingHao}}
+    </view>
+
+    <text>\n</text>
+    问题详情：{{item.XiangQing}}
+    <text>\n</text>
+    填写时间：{{item.Time}}
+  </view>
+
+
+
+</scroll-view>

@@ -1,0 +1,27 @@
+<view>
+  <text class="name" user-select="true">报修人：{{detail.Name}}</text>
+  <view class="shijian">{{detail.Time}}</view>
+  <view class="status">报修单状态：
+    <text wx:if="{{zhuangtai==0}}" class="status0">未接单 </text>
+    <text wx:if="{{zhuangtai==1}}" class="status1">维修中</text>
+    <text wx:if="{{zhuangtai==2}}" class="status2">已维修</text>
+  </view>
+  <view class="model">电脑型号：<text user-select='true'>{{detail.XingHao}}</text></view>
+  <view class="more">问题详情：<text user-select='true'>{{detail.XiangQing}}</text></view>
+  <view class="more2">联系方式：<text user-select="true">{{detail.Contact}}</text></view>
+  <view class="more2">年级：{{detail.NianJi}}</view>
+  <view class="more2">学院：{{detail.XueYuan}}</view>
+  <view class="more2">园区：{{detail.SuShe}}</view>
+  <view class="more2" >接单时间：{{detail.JieDanTime}}</view>
+
+  <view class="more2" >接单人：{{detail.JieDanRen}}</view>
+
+  <view class="more2" >完成时间：{{detail.FinishTime}}</view>
+
+  <view class="more2" >维修人员：{{detail.FinishRen}}</view>
+
+  <!-- <view class="more2">电话：<text selectable='true'>{{detail.PhoneNumber}}</text></view>
+  <view class="more2">QQ  ：<text selectable='true'>{{detail.QQnumber}}</text></view> -->
+
+
+</view>

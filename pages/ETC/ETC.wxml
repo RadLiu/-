@@ -1,0 +1,24 @@
+<view>
+  <view class="weui-cells__title"> 温馨提示：</view>
+  <text>\n</text>
+  <view class="shuoming">初次使用此小程序请先登录</view>
+  <view class="shuoming">随后点击下方绿色按钮进行报修</view>
+</view>
+<text>\n</text>
+<button  type="primary" bindtap="GoToSystemPage" >小程序报修</button>
+<image style="position: relative; width: 679rpx; height: 424rpx; display: inline-block; box-sizing: border-box; left: 36rpx; top: -4rpx" src="https://636c-cloud1-1g4c6hjqb56260fb-1308434384.tcb.qcloud.la/%E6%8F%92%E7%94%BB/%E7%94%B5%E8%84%91%E5%9C%BA%E6%99%AF.png?sign=9bec2f0349dc1f2f0ce51ee7e8941083&t=1681740582"/>
+
+<view class="shuoming">您可加入电子技术部线上咨询中心QQ群进行咨询</view>
+<text class="shuoming" user-select="true" >群号：459121889（长按可复制）</text>
+<view class="shuoming">我们会根据学期进行情况调整报修功能的开闭</view>
+<view class="shuoming">具体信息请加入QQ群了解</view>
+
+
+<!-- <button type="default" bindtap="GoToOldWebBaoXiu"  style="position: relative; left: 0rpx; top: 550rpx">网页报修（老）</button> -->
+
+<!-- <mp-msg >
+  <view slot="footer">         
+    <view class="weui-footer__text">Copyright © 2021-现在 </view>
+    <view class="weui-footer__text">江南大学团委通讯社电子技术部 </view>
+  </view>
+</mp-msg> -->

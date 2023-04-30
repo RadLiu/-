@@ -1,0 +1,22 @@
+<view class="title">
+  更新日志
+  <text>\n</text>
+</view>
+
+<view class="verson">
+  -----------V1.2.1-----------
+  <text>\n</text>
+  2023/02/09->2023/04/20
+</view>
+<view class="neirong">
+
+  <text>\n</text>
+  1.更换底部tabbar图标样式与颜色；
+  <text>\n</text>
+  2.接单系统将原有三页面合并为一个；
+  <text>\n</text>
+  3.增加大量插画素材；丰富页面；
+  <text>\n</text>
+  4.修复复制文字功能失效的bug；
+
+</view>

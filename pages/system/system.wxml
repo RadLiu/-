@@ -1,0 +1,131 @@
+<image style="width: 145rpx; height: 281rpx; display: inline-block; box-sizing: border-box; position: relative; left: 80rpx; top: 10rpx" src="https://636c-cloud1-1g4c6hjqb56260fb-1308434384.tcb.qcloud.la/%E6%8F%92%E7%94%BB/%E5%B7%A5%E4%BD%9C%E7%94%B7%E5%A4%87%E4%BB%BD.png?sign=d60b06e062a8c4e878d0b93d201c8347&t=1681742006" />
+<image style="width: 130rpx; height: 282rpx; display: inline-block; box-sizing: border-box; position: relative; left: 380rpx; top: 10rpx" src="https://636c-cloud1-1g4c6hjqb56260fb-1308434384.tcb.qcloud.la/%E6%8F%92%E7%94%BB/%E5%B7%A5%E4%BD%9C%E5%A5%B3%E5%A4%87%E4%BB%BD.png?sign=68294be7a012f097dd622952eda16a37&t=1681742452" />
+
+<view class="zhuyi" style="position: relative; left: 22rpx; top: -31rpx; width: 708rpx; height: 239rpx; display: block; box-sizing: border-box">
+    注意事项：
+    <text>\n</text>
+    1.请认真阅读下方的用户协议，勾选同意后方能授权提交报修信息。
+    <text>\n</text>
+    2.请确保所填的信息正确，便于技术员更准确的联系到您。
+    <text>\n</text>
+    3.本程序收集的姓名、微信号、QQ号、园区、学院、年级、电脑型号与详情描述仅用作联系报修人与技术员接单用途，并保证您的信息不会被用作报修以外的其他任何用途，请放心填写。
+  </view>
+
+<view>
+  <!-- <view class="weui-cells__title"></view> -->
+  <!-- <view class="weui-cells__title"><text>姓名：</text></view>
+    <input type="text" placeholder="请输入姓名" bindinput="getName"> </input>
+
+    <view class="weui-cells__title"><text>手机号码：</text></view>
+    <input type="number" placeholder="请输入11位手机号码" maxlength="11" bindinput="getPhoneNumber"> </input> -->
+
+  <view class="weui-cells__title"><text>姓名：</text></view>
+  <input placeholder="请输入姓名" bindinput="getName"> </input>
+
+  <view class="weui-cells__title"><text>联系方式：</text></view>
+  <input placeholder="请输入QQ号" bindinput="getContact"> </input>
+
+  <!-- <view class="weui-cells__title"><text>QQ号码：</text></view>
+    <input type="number" placeholder="请输入QQ号码" bindinput="getQQNumber"> </input> -->
+
+  <view class="section">
+    <view class="weui-cells__title">
+      <view class="section__title">园区：</view>
+    </view>
+    <picker bindchange="bindPickerChangeSS" value="{{indexSS}}" range="{{arraySS}}">
+      <view class="picker">
+        {{arraySS[indexSS]}}
+      </view>
+    </picker>
+
+    <view class="weui-cells__title">
+      <view class="section__title">学院：</view>
+    </view>
+    <picker bindchange="bindPickerChangeXY" value="{{indexXY}}" range="{{arrayXY}}">
+      <view class="picker">
+        {{arrayXY[indexXY]}}
+      </view>
+    </picker>
+
+
+    <view class="weui-cells__title">
+      <view class="section__title">年级：</view>
+    </view>
+    <picker bindchange="bindPickerChangeNJ" value="{{indexNJ}}" range="{{arrayNJ}}">
+      <view class="picker">
+        {{arrayNJ[indexNJ]}}
+      </view>
+    </picker>
+
+    <view class="weui-cells__title"><text>电脑型号：</text></view>
+    <input type="text" placeholder="请输入电脑型号，台式机请备注“台式机”" bindinput="getDeviceModel"> </input>
+
+  </view>
+
+  <view class="weui-cells__title">详情描述</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" bindinput="getDetail" placeholder="请输入问题详情" style="height: 200rpx" />
+
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- <view class="page__bd">
+        <view class="weui-cells">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="weui-uploader">
+                        <view class="weui-uploader__hd">
+                            <view class="weui-uploader__title">图片上传</view>
+                            <view class="weui-uploader__info">{{images.length}}/9</view>
+                        </view>
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for="{{images}}" wx:key="*this">
+                                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+                            </view>
+                            <view class="weui-uploader__input-box">
+                                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <button bindtap="uploadImg" class="sahngchuan" style="position: relative; left: 0rpx; top: 25rpx">上传图片</button> -->
+
+  <radio class="radio" bindtap="radioOK">
+    <view class="contain">勾选即代表已阅读<navigator url="../xieyi/xieyi" class="xieyi">《用户协议》</navigator>
+    </view>
+  </radio>
+
+
+
+
+  <view class="page__bd">
+    <view class="weui-btn-area" style="position: relative; left: 0rpx; top: 0rpx">
+      <button class="weui-btn" type="primary" bindtap="completeBaoXiu" style="position: relative;  width: 80%; height: 80rpx; display: block; box-sizing: border-box" disabled="{{btn_disabled}}">授权提交报修</button>
+
+    </view>
+  </view>
+
+  <text>\n</text>
+  <text>\n</text>
+  <text>\n</text>
+
+  <mp-dialog title="注意" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>确认授权提交报修吗？</view>
+  </mp-dialog>
+
+
+
+
+</view>

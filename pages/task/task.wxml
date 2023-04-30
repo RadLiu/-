@@ -1,0 +1,29 @@
+<view class="tab">
+  <button class="task0" type="primary">未处理</button>
+  <button class="task1" type="default" bindtap="GoTotask1">待完成</button>
+  <button class="task2" type="default" bindtap="GoTotask2">已完成</button>
+</view>
+
+<scroll-view class="task" enable-flex scroll-y wx:for="{{list}}">
+
+  <view class="task_detail" bindtap="GoToDetail" data-id="{{item._id}}">
+    <view class="xinghao">
+      型号：{{item.XingHao}}
+    </view>
+
+  <!-- <view class="status">
+    <text wx:if="{{zhuangtai0==0}}" class="status0">未接单</text>
+    <text wx:if="{{zhuangtai0==1}}" class="status1">维修中</text>
+    <text wx:if="{{zhuangtai0==2}}" class="status2">已维修</text>
+  </view> -->
+  <text>\n</text>
+  报修人：{{item.Name}} 
+  <text>\n</text>
+  详情：{{item.XiangQing}}
+  <text>\n</text>
+  {{item.Time}}
+  </view>
+
+
+
+</scroll-view> 

@@ -1,0 +1,50 @@
+<!-- 以下是未登录界面 -->
+
+<view wx:if="{{!userInfo}}">
+  <view class="weui-cells__title"> 温馨提示：</view>
+  <!-- 换行用 -->
+  <text>\n</text>
+
+  <view class="shuoming">初次使用小程序请先登录</view>
+  <view class="shuoming">再点击下方的“报修页面”进行填报</view>
+  <view class="shuoming"></view>
+</view>
+
+
+<button wx:if="{{!userInfo}}" bindtap="login_user" type="primary" class="dengluanniu">用户登录</button>
+
+
+<!-- 以下是登录界面 -->
+
+<view wx:if="{{userInfo}}" class="xinxi">
+
+  <image class="touxiang" src="https://636c-cloud1-1g4c6hjqb56260fb-1308434384.tcb.qcloud.la/%E6%8F%92%E7%94%BB/robot.png?sign=6b3fa418c51194025d3d44ea5a1c329c&t=1681743380" bindlongpress="HouTai"></image>
+
+  <!-- <text class="nicheng">{{userInfo.nickName}}</text> -->
+  <text class="nicheng" wx:if="{{adminInfo}}">当前登录的技术员：{{username}}</text>
+</view>
+
+
+<mp-cells wx:if="{{userInfo}}" title="报修单管理">
+
+  <mp-cell wx:if="{{userInfo}}" link url="../selftask/selftask" value="我填写的报修" footer="查看">
+  </mp-cell>
+
+  <mp-cell wx:if="{{adminInfo}}" link url="../task/task" value="接单系统" footer="去处理">
+  </mp-cell>
+
+  <mp-cell wx:if="{{adminInfo}}" link url="../task_1/task_1" value="总体维修进度" footer="查看">
+  </mp-cell>
+
+</mp-cells>
+
+
+<button wx:if="{{userInfo}}" type="warn" bindtap="logout" class="tuichudenglu" style="position: relative; left: 0rpx; ">退出登录</button>
+
+<mp-msg>
+  <view slot="footer">
+    <view class="weui-footer__text">Copyright © 2021-2023</view>
+    <view class="weui-footer__text">江南大学团委通讯社电子技术部</view>
+    <view class="weui-footer__text">V1.2.2 -Ruer- </view>
+  </view>
+</mp-msg>

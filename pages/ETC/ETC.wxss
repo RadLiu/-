@@ -1,0 +1,23 @@
+.shuoming{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rpx;  
+}
+
+button{
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
+image{
+  /* border: 2px solid rgb(126, 4, 4); */
+  width: 750rpx;
+ 
+}

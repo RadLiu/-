@@ -1,0 +1,19 @@
+.shuoming{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.adminlog{
+  margin: 30rpx;
+}
+
+.admin{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 40rpx;
+}
+
+

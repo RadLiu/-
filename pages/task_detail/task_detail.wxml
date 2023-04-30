@@ -1,0 +1,58 @@
+<view>
+  <text class="name" user-select="true">报修人：{{detail.Name}}</text>
+  <view class="shijian">创建于{{detail.Time}}</view>
+  <view class="status">报修单状态：
+    <text wx:if="{{zhuangtai==0}}" class="status0">未接单 </text>
+    <text wx:if="{{zhuangtai==1}}" class="status1">处理中</text>
+    <text wx:if="{{zhuangtai==2}}" class="status2">已维修</text>
+  </view>
+  <view class="model">电脑型号：<text user-select='true'>{{detail.XingHao}}</text></view>
+  <view class="more">问题详情：<text user-select='true'>{{detail.XiangQing}}</text></view>
+  <view class="more2">联系方式：<text user-select="true">{{detail.Contact}}</text></view>
+  <view class="more2">年级：{{detail.NianJi}}</view>
+  <view class="more2">学院：{{detail.XueYuan}}</view>
+  <view class="more2">园区：{{detail.SuShe}}</view>
+
+  <!-- <view class="more2">电话：<text selectable='true'>{{detail.PhoneNumber}}</text></view>
+  <view class="more2">QQ  ：<text selectable='true'>{{detail.QQnumber}}</text></view> -->
+
+
+</view >
+
+<view class="more2" wx:if="{{zhuangtai>=1}}">接单时间：{{detail.JieDanTime}}</view>
+
+<view class="more2" wx:if="{{zhuangtai>=1}}">接单人：{{detail.JieDanRen}}</view>
+
+<view class="more2" wx:if="{{zhuangtai>=1}}">完成时间：{{detail.FinishTime}}</view>
+
+<view class="more2" wx:if="{{zhuangtai>=1}}">维修人员：{{detail.FinishRen}}</view>
+
+<view class="detail"><text>\n</text></view>
+
+<input wx:if="{{zhuangtai==1}}" placeholder="修改并覆盖接单人" bindinput="getJieDanName" value="{{searchinput}}"> </input>
+<text>\n</text>
+<input wx:if="{{zhuangtai>=1}}" placeholder="输入并覆盖维修人员姓名，多个请用；区分" bindinput="getFinishName" value="{{searchinput_1}}"> </input>
+
+<view class="detail"><text>\n</text></view>
+<text>\n</text>
+<button wx:if="{{zhuangtai>=1}}" type="default" bindtap="Modify">覆盖原有信息</button>
+
+<view wx:if="{{zhuangtai==0}}" class="page__bd">
+  <text>\n</text>
+  <view>
+    <button class="weui-btn" type="default" bindtap="Catch" style="position: relative; width: 570rpx; height: 80rpx; box-sizing: border-box; left: 0rpx; top: 0rpx">接单</button>
+
+  </view>
+</view>
+
+<view wx:if="{{zhuangtai==1}}" class="page__bd">
+  <view class="weui-btn-area" style="position: relative; left: 0rpx; top: 0rpx">
+    <button class="weui-btn" type="primary" bindtap="completeFixing" style="position: relative; width: 570rpx; height: 80rpx; box-sizing: border-box; left: 0rpx; top: 0rpx">提交报修结果</button>
+
+  </view>
+  <text>\n</text>
+</view>
+
+<mp-dialog title="注意" show="{{dialogShow}}" bindbuttontap="Fixing" buttons="{{buttons}}">
+  <view>确认提交吗？</view>
+</mp-dialog>

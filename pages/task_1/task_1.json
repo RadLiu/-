@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "mp-tabs": "@miniprogram-component-plus/tabs"
+
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "其他人正在处理的报修单",
+  "backgroundColor": "#d3d3d3",
+  "enable-back-to-top": "true"
+}

@@ -1,0 +1,21 @@
+
+
+<view>
+  <view class="weui-cells__title"> 温馨提示：</view>
+  <!-- 换行用 -->
+  <text>\n</text>
+  <text>\n</text>
+
+  <button wx:if="{{!adminInfo}}" type="primary" bindtap="adminlog" class="adminlog">管理员登录</button>
+
+
+  <button wx:if="{{adminInfo}}" type="warn" bindtap="adminlogout" class="adminlog">管理员退出登录</button>
+
+  <button wx:if="{{adminInfo}}" type="default" bindtap="developlog" class="adminlog">更新日志</button>
+
+  <view class="shuoming" wx:if="{{!adminInfo}}"></view>
+  <text class="shuoming" selectable="true" wx:if="{{!adminInfo}}"></text>
+</view>
+
+<view class="admin" wx:if="{{adminInfo}}"></view>
+<image style="position: relative; left: 176rpx; top: -19rpx; width: 399rpx; height: 352rpx; display: inline-block; box-sizing: border-box" src="https://636c-cloud1-1g4c6hjqb56260fb-1308434384.tcb.qcloud.la/%E6%8F%92%E7%94%BB/%E6%95%B0%E6%8D%AE%2000_00_00-00_00_30.gif?sign=1025727e7b59186464b94bf8e6a879bb&t=1681741558" />
