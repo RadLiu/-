@@ -1,0 +1,68 @@
+{
+  "pages":[
+
+    "pages/mine/mine",
+    "pages/ETC/ETC",
+    "pages/menu/menu",
+    "pages/help/help",
+    "pages/system/system",
+    "pages/tools/tools",
+    "pages/result_OK/result_OK",
+    "pages/old/old",
+    "pages/task/task",
+    "pages/task_1/task_1",
+    "pages/task_2/task_2",
+    "pages/task_3/task_3",
+    "pages/houtai/houtai",
+    "pages/task_detail/task_detail",
+    "pages/adminlog/adminlog",
+    "pages/selftask/selftask",
+    "pages/selftask_detail/selftask_detail",
+    "pages/xieyi/xieyi",
+    "pages/developlog/developlog",
+
+    
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#E1FFFF",
+    "navigationBarTitleText": "江大团通电子技术部报修系统",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "selectedColor": "#527EFD",
+    "list": [
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "管理页面",
+        "iconPath": "icon/_Menu.png",
+        "selectedIconPath": "icon/Menu.png"
+      },
+      {
+        "pagePath": "pages/ETC/ETC",
+        "text": "报修页面",
+        "iconPath": "icon/_Tower.png",
+        "selectedIconPath": "icon/Tower.png"
+      },
+      
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/_User.png",
+        "selectedIconPath": "icon/User.png"
+      }
+
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  
+
+  
+
+  
+
+}
+
